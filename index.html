@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="hl-en not-logged-in ">
+<head>
+    <meta charset="UTF-8" />
+    <title>Smug</title>
+    
+<style>
+
+.smug-main-mmain #mmain-bg {
+    background-color: #21C475 !important;
+    background-image: none !important; 
+    background-position: 50% 50%;
+    height: 280px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+</style>
+    
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>
+function fadeit() {
+    var active = $('#screenshot-smug img.active');
+	var testit = active; 
+    if (active.length == 0) 
+	{
+		active = $('#screenshot-smug img:last');
+	}
+	var next; 
+	if ( active.next().length )
+	{
+	    next = active.next(); 
+	}
+	else 
+	{
+		next = $('#screenshot-smug img:first');
+	}
+	
+    active.addClass('last-smug-item');
+    next.css({opacity: 0.0}).addClass('active').animate({opacity: 1.0}, 1500, function() {
+        active.removeClass('active last-smug-item');
+    });
+    setTimeout("fadeit()", 3000);
+}
+
+$(function() {
+    setTimeout("fadeit()", 3000);
+});
+
+</script>
+
+    
+<style>
+@charset "UTF-8";
+
+body 
+{
+ font-family:Helvetica !important;
+  margin: 0; 
+}
+
+
+a:link {color:#21C475;text-decoration:none;}      /* unvisited link */
+a:visited {color:#21C475;text-decoration:none;}  /* visited link */
+a:hover {color:#21C475;text-decoration:none;}  /* mouse over link */
+a:active {color:#21C475;text-decoration:none;}  /* selected link */
+html 
+{
+  font-size: 59%;
+}
+
+body 
+{
+  background: #fff; 
+}
+
+.main 
+{
+  padding-bottom: 0; 
+}
+
+
+
+
+
+.mmain-wrapper {
+  color: #fff; }
+  .mmain-wrapper h3 {
+    color: #fff;
+    font-size: 45px;
+    line-height: 50px;
+    margin: 0 0 30px; }
+  .mmain-wrapper p {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600; }
+
+
+
+.main-content {
+  width: 560px;
+  margin-right: -2px;
+  padding: 20px 0 90px; }
+
+
+	  .smug-main-mmain #screenshot-smug img {
+	    position: absolute;
+	    width: 200px !important;
+	    z-index: 8; }
+	    .smug-main-mmain #screenshot-smug img.active {
+	      z-index: 10; }
+	    .smug-main-mmain #screenshot-smug img.last-smug-item {
+	      z-index: 9; }
+
+	.smug-main-mmain .content {
+	  float: right;
+	  position: relative;
+	  width: 520px;
+	  margin-top: 30px; }
+
+  .m-hide {
+    display: none; } }
+
+.smug-main-mmain #mmain-bg {
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #517fa4;
+  background-image: url(), -webkit-gradient(linear, left top, left bottom, from(#517fa4), to(#306088));
+
+  background-position: 50% 50%; }
+.smug-main-mmain .wrap {
+  position: relative;
+  width: 880px;
+  margin: 0 auto; }
+  .smug-main-mmain .wrap:before, .smug-main-mmain .wrap:after {
+    content: "";
+    display: block;
+    overflow: hidden; }
+  .smug-main-mmain .wrap:after {
+    clear: both; }
+  .smug-main-mmain .wrap {
+    zoom: 1; }
+.smug-main-mmain .mmain-phones {
+  position: absolute;
+  left: 0;
+  bottom: 46px;
+  width: 318px;
+  height: 512px;
+  padding-top: 80px;
+  margin-left: 4px;
+  background: url(http://i62.tinypic.com/2m517k9.png) no-repeat 0 80px; }
+.smug-main-mmain #screenshot-smug {
+  position: absolute;
+  top: 159px;
+  left: 98px; }
+
+  .smug-main-mmain .content .Smug-title {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    width: 314px;
+    height: 294px;
+    background: url() no-repeat 0 0;
+    text-indent: -9999em; }
+
+
+
+  .smug-main-mmain .content .tab {
+    margin-top: 170px;
+    background: url() 6px 6px no-repeat; }
+  .smug-main-mmain .content .tab-content {
+    padding: 40px 56px 128px 48px; }
+  
+
+
+.smug-main-mmain .tab-content img.meet-Smug {
+  margin-bottom: 1em; }
+.smug-main-mmain .platform-badge-container {
+  position: absolute;
+  margin-top: 25px; }
+.smug-main-mmain .platform-badge {
+  margin-right: 16px; }
+
+.mmain-megaphone-wrapper {
+  text-align: center;
+  margin: 0 0 32px; }
+
+
+
+  .smug-main-mmain .content .Smug-title {
+    background-image: url(http://static.wixstatic.com/media/856606_7203e3e5b1f74a96bb37e3f3c3eb46db.png_srz_p_249_172_75_22_0.50_1.20_0.00_png_srz);
+    background-size: 249px 172px; }
+
+  .smug-main-mmain .content .tab {
+    background-image: url(http://i62.tinypic.com/2nuhzl3.jpg);
+    background-size: 505px 284px; } }
+.tab-content h1 {
+  font-size: 27px;
+  line-height: 32px;
+  margin-right: 35%;
+  color: #06365f; }
+
+.tab-content p {
+  font-size: 16px;
+  line-height: 24px; }
+
+
+
+
+</style>
+
+
+</head>
+<body class="smug-main-mmain">
+
+
+<div class="root">
+
+    <div class="page">
+        
+
+        
+        <div class="main">
+            
+    <div id="mmain-bg"></div>
+
+    <div class="wrap">
+        <div class="mmain-phones" id="iphone">
+            <div id="screenshot-smug">
+                <img src="http://i62.tinypic.com/1qmljr.png" class="active" />
+                <img src="http://i57.tinypic.com/30mwkmh.png" />
+                <img src="http://i61.tinypic.com/2eojw5s.png" />
+            </div>
+
+
+
+
+            <i class="mmain-phones-glare"></i>
+        </div>
+        <div class="content">
+
+			<center>
+            <h1 class="Smug-title" style='margin-left:110px !important'>Smug - Fast, beautiful photo sharing for your iPhone</h1>
+		</center>	
+            <div class="tab">
+                <div class="tab-content">
+                    <h1>Smug. Free messaging done right.</h1>
+
+                    <p>
+                    	Smug is the messenger available for iPhone, iPod and iPad and all Android devices. Smug uses your 3G/4G or WiFi to message with your friends and family. Switch from SMS to Smug to send
+						and receive unlimited text messages, photos, voice messages, and video messages. With Smug, your friends on Android can message you on iPhone, iPod and iPad and you can message them!
+                    </p>
+                    <p>
+                        You can also earn Amazon gift cards for inviting friends!
+                    </p>
+                    <div class="platform-badge-container">
+                        <a class="platform-badge" href="https://itunes.apple.com/us/app/smug/id683864301?ls=1&mt=8"><img src="http://i58.tinypic.com/28r0dwk.jpg" alt="Available on the App Store"/></a>
+                        <a class="platform-badge" href="https://play.google.com/store/apps/details?id=com.appredeem.smugchat"><img src="http://i57.tinypic.com/n71kzq.jpg" alt="Coming soon to Android"/></a>
+                    </div>
+					<div>
+						An HTML version of <a href='https://m.smug.co/'>Smug Messenger</a> is also available for your web browser.
+					</div>
+                </div>
+				
+            </div>
+        </div>
+    </div>
+
+        </div> 
+        
+
+    </div>
+    
+    <div style='font-size:12px; font-weight:bold;text-transform: uppercase;text-decoration:none;'>
+        <center>
+				<a href='' style='font-color:#517fa4 !important;'>Team</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href='' style='font-color:#517fa4 !important;'>About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href='' style='font-color:#517fa4 !important;'>Jobs</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href='' style='font-color:#517fa4 !important;'>Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </center>
+    </div>
+    
+<br clear='both'>
+<br clear='both'>
+
+
+       
+
+</body>
+</html>
